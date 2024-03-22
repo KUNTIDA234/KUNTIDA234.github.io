@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #5C3ECA;
+    padding: 10px;
+  }
+  
+  header h1 {
+    margin: 0;
+    color: rgb(255, 255, 169);
+    text-align: left;
+  }
+  
+  
+  
+  nav ul {
+    list-style-type: none;
+    margin: 10;
+    padding: 0;
+    text-align: left;
+    display: flex;
+  }
+  
+  nav ul li {
+    display: flex;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px;
+}
+
+#game-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+#number-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    
+}
+
+.number-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+    border: 1px solid #ccc;
+    font-size: 24px;
+    cursor: pointer;
+    width: 100px; /* กำหนดความกว้างของช่อง */
+    height: 100px; /* กำหนดความสูงของช่อง */
+}
+
+#shuffle-btn {
+    grid-column: span 8;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    
+}

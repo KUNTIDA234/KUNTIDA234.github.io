@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #5C3ECA;
+  padding: 10px;
+}
+
+header h1 {
+  margin: 0;
+  color: rgb(255, 255, 169);
+  text-align: left;
+}
+nav ul {
+  list-style-type: none;
+  margin: 10;
+  padding: 0;
+  text-align: left;
+  display: flex;
+}
+
+nav ul li {
+  display: flex;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.grid-item {
+  padding: 20px;
+  background-color: #F8C9DD;
+  color: rgb(78, 5, 151);
+}
+
+.image {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.image img {
+  max-width: 50%;
+  height: auto;
+  box-sizing: border-box; /* เพิ่มเติม */
+  padding: 10px ;
+}
+
+.text {
+  padding: 20px;
+  background-color: #F8C9DD;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+footer {
+  text-align: center;
+  font: 1em sans-serif;
+  font-weight: bold;
+}
