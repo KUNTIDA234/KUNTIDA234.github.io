@@ -1,92 +1,92 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: #5C3ECA;
-    padding: 10px;
-  }
-  
-  header h1 {
-    margin: 0;
-    color: rgb(255, 255, 169);
-    text-align: left;
-  }
-  
-  
-  
-  nav ul {
-    list-style-type: none;
-    margin: 10;
-    padding: 0;
-    text-align: left;
-    display: flex;
-  }
-  
-  nav ul li {
-    display: flex;
-    margin-right: 20px;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
+header {
+  background-color: #5C3ECA;
+  padding: 10px;
+}
+
+header h1 {
+  margin: 0;
+  color: rgb(255, 255, 169);
+  text-align: left;
+}
 nav ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  margin: 10;
+  padding: 0;
+  text-align: left;
+  display: flex;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 10px;
+  display: flex;
+  margin-right: 20px;
 }
 
 nav ul li a {
-    color: #fff;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 main {
-    max-width: 800px;
-    margin: 20px;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
-#game-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+.container {
+  text-align: center;
 }
 
-#number-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
-    
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  margin-bottom: 20px;
+  margin: 20px;
+  color: #5C3ECA;
 }
 
-.number-cell {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: lightblue;
-    border: 1px solid #ccc;
-    font-size: 24px;
-    cursor: pointer;
-    width: 100px; /* กำหนดความกว้างของช่อง */
-    height: 100px; /* กำหนดความสูงของช่อง */
+.tile {
+  border: 1px solid #ccc;
+  padding: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-#shuffle-btn {
-    grid-column: span 8;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    font-size: 16px;
-    cursor: pointer;
-    
+.tile.correct {
+  background-color: #a1ffa1; /* เปลี่ยนสีเมื่อเรียงถูกต้อง */
+  color: #fff;
+}
+
+.message {
+  font-size: 24px;
+  font-weight: bold;
+  color: #991515; /* สีข้อความเมื่อเรียงถูกต้อง */
+  margin: 20px;
+}
+
+.start-btn {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.start-btn:hover {
+  background-color: #0056b3;
+  margin: 20px;
+}
+
+.timer {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px;
 }
