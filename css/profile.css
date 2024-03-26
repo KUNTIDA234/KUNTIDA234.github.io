@@ -49,8 +49,8 @@ nav ul li a {
 }
 
 .profile-pic {
-  width: 400px;
-  height: 500px;
+  width: 400px; /* กำหนดความกว้างของรูป */
+  height: 500px; /* กำหนดความสูงของรูป */
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   margin-right: 20px; /* ระยะห่างระหว่างรูปและข้อมูลโปรไฟล์ */
@@ -71,11 +71,10 @@ h2 {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-
 @media (max-width: 768px) {
   .profile-pic {
-    max-width: 100%;
-    height: auto;
+    width: 400px; /* กำหนดความกว้างของรูป */
+    height: 500px; /* กำหนดความสูงของรูป */
   }
 
   .profile-info {
@@ -92,12 +91,12 @@ h2 {
 }
 
 .Skills {
-    grid-column: span 2;
-    background-color: #faf2ff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
+  grid-column: span 2;
+  background-color: #faf2ff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
 .grid-item.contact {
   grid-column: span 2;
@@ -115,11 +114,14 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   margin-top: 20px;
+  justify-content: center;
+  width: auto;
+  height: auto;
 }
 
 .contact-item img {
-  width: 100px;
-  height: 100px;
+  width: 100px; /* กำหนดความกว้างของรูปใน contact-item */
+  height: 100px; /* กำหนดความสูงของรูปใน contact-item */
   border-radius: 50%;
   transition: transform 0.3s ease;
   padding: 20px;
