@@ -32,71 +32,103 @@ nav ul li a {
   text-decoration: none;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
-main {
+.profile {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 80vh;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  
+.profile-pic {
+  width: 400px;
+  height: 500px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-right: 20px; /* ระยะห่างระหว่างรูปและข้อมูลโปรไฟล์ */
 }
 
-.grid-item {
-  padding: 20px;
-  background-color: #F8C9DD;
+h2 {
   color: rgb(39, 0, 116);
+}
+
+.profile-info {
+  flex: 1; /* ให้ข้อมูลโปรไฟล์ยืดขยายตามพื้นที่ที่เหลือ */
   display: flex;
-  flex-direction: column; /* เปลี่ยนเป็น column */
-  align-items: center; /* จัดให้อยู่ตรงกลางแนวนอน */
-  margin-top: 10px; /* ระยะห่างด้านบน */
-  margin-bottom: 10px; 
-}
-
-.image img {
-  width: 600px;
-  height: 700px;
-  box-sizing: border-box;
-  padding: 10px;
-}
-
-.text {
-  padding: 20px;
+  flex-direction: column;
   background-color: #faf2ff;
-  max-width: 100%;
+  color: rgb(39, 0, 116);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width: 768px) {
+  .profile-pic {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .profile-info {
+    padding: 10px;
+  }
+}
+
+.bio {
+  grid-column: span 2;
+  background-color: #faf2ff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.Skills {
+    grid-column: span 2;
+    background-color: #faf2ff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+.grid-item.contact {
+  grid-column: span 2;
+  background-color: #faf2ff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .contact-info {
-  display: flex;
-  align-items: center; /* จัดให้อยู่ตรงกลางแนวนอน */
-  margin-top: 20px; /* ระยะห่างด้านบน */
+  margin-top: 20px;
 }
 
 .contact-item {
   display: flex;
-  align-items: center;
-  margin-top: 10px; /* ระยะห่างระหว่างข้อมูลต่าง ๆ */
+  flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 .contact-item img {
-  width: 100px; /* ขนาดรูปภาพ */
-  height: 100px; /* ขนาดรูปภาพ */
-  margin: 20px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  padding: 20px;
 }
 
-@media (max-width: 768px) {
-  .grid-container {
-    grid-template-columns: 1fr;
-  }
+.contact-item img:hover {
+  transform: scale(1.1);
 }
 
-footer {
-  text-align: center;
-  font: 1em sans-serif;
-  font-weight: bold;
+.contact-item a:last-child {
+  margin-right: 0;
 }
