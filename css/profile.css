@@ -33,11 +33,12 @@ nav ul li a {
 }
 
 /* ส่วนของคลาส container */
-.container {
+.Data {
   display: grid;
   grid-template-columns: 1fr ;
   gap: 20px;
   padding: 20px;
+  
 }
 
 /* Profile Section Style */
@@ -53,6 +54,7 @@ nav ul li a {
   height: auto;
   border-radius: 10px;
 }
+
 
 /* Info Section Style */
 .info  {
@@ -91,27 +93,6 @@ nav ul li a {
   margin-top: 20px; /* เพิ่มระยะห่างด้านบน */
 }
 
-/* Skills Section Style */
-.Skills {
-  display: flex;
-  flex-direction: column;
-}
-
-.Skills h2 {
-  margin-bottom: 0.5rem;
-}
-
-.Skills p {
-  margin-bottom: 0.25rem;
-}
-
-/* Contact Section Style */
-.contact-info {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
 /* ส่วนของรายการการติดต่อ */
 .contact-item {
   display: flex;
@@ -121,8 +102,8 @@ nav ul li a {
 
 /* ส่วนของรูปภาพการติดต่อ */
 .contact-item img {
-  width: 80px;
-  height: 80px; /* รักษาขนาดเป็น 100x100px */
+  width: 50px;
+  height: 50px; /* รักษาขนาดเป็น 100x100px */
   border-radius: 50%;
   transition: transform 0.3s ease;
   margin: 10px; /* เพิ่มระยะห่างรอบภาพ */
@@ -152,7 +133,7 @@ nav ul li a {
   }
 
   .profile-pic {
-    max-width: 50%; /* ปรับขนาดรูปให้เต็มความกว้างของ Container */
+    max-width: 100%; /* ปรับขนาดรูปให้เต็มความกว้างของ Container */
     height: auto;
     margin-bottom: 1rem; /* เพิ่มระยะห่างด้านล่างรูปใน Profile Section */
   }
@@ -167,4 +148,3 @@ nav ul li a {
     padding: 20px; /* ลดระยะห่างรอบขอบรูปใน Contact Section */
   }
 }
-
