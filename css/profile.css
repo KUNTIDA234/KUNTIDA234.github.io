@@ -36,7 +36,7 @@ nav ul li a {
 .container {
   display: grid;
   grid-template-columns: 1fr ;
-  gap: 10px;
+  gap: 20px;
   padding: 20px;
 }
 
@@ -54,10 +54,11 @@ nav ul li a {
   color: rgb(39, 0, 116);
 }
 
-/* รูปโปรไฟล์ */
+/* ส่วนของโปรไฟล์ */
 .profile-pic {
-  width: 400px;
-  height: 500px;
+  width: 100%; /* เปลี่ยน width เป็น 100% เพื่อให้รูปภาพปรับขนาดตามขนาดของคอลัมน์ */
+  max-width: 400px; /* เพิ่ม max-width เพื่อระบุขนาดสูงสุดของรูปภาพ */
+  height: auto;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -99,12 +100,12 @@ nav ul li a {
   margin-top: 20px; /* เพิ่มระยะห่างด้านบน */
 }
 
-/* ข้อมูลการติดต่อ */
+/* ส่วนของการติดต่อ */
 .contact-info {
   margin-top: 10px; /* ลดระยะห่างด้านบน */
 }
 
-/* รายการการติดต่อ */
+/* ส่วนของรายการการติดต่อ */
 .contact-item {
   display: flex;
   flex-wrap: wrap;
@@ -112,13 +113,14 @@ nav ul li a {
   margin-top: 10px; /* ลดระยะห่างด้านบน */
 }
 
-/* รูปภาพการติดต่อ */
+/* ส่วนของรูปภาพการติดต่อ */
 .contact-item img {
-  width: 100px;
-  height: 100px; /* เปลี่ยนความสูงเป็น 100px ให้สูงเท่ากับความกว้าง */
+  width: 50px;
+  height: 50px; /* รักษาขนาดเป็น 100x100px */
   border-radius: 50%;
   transition: transform 0.3s ease;
   margin: 10px; /* เพิ่มระยะห่างรอบภาพ */
+  
 }
 
 /* Hover effect สำหรับรูปภาพการติดต่อ */
@@ -133,7 +135,7 @@ nav ul li a {
   }
 
   .profile-pic {
-    max-width: 100%;
+    max-width: 100%; /* เพิ่ม max-width เพื่อให้รูปภาพปรับขนาดตามคอลัมน์ */
     height: auto;
   }
 }
