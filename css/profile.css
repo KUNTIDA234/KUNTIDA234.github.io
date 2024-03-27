@@ -40,7 +40,7 @@ nav ul li a {
   padding: 20px;
 }
 
-/* ส่วนของโปรไฟล์ */
+/* Profile Section Style */
 .profile {
   display: flex;
   flex-direction: column;
@@ -48,22 +48,13 @@ nav ul li a {
   align-items: center;
 }
 
-/* หัวเรื่องรูปโปรไฟล์ */
-.profile h2 {
-  margin-bottom: 10px; /* เพิ่มระยะห่างด้านล่างของ h2 */
-  color: rgb(39, 0, 116);
-}
-
-/* ส่วนของโปรไฟล์ */
 .profile-pic {
-  width: 100%; /* เปลี่ยน width เป็น 100% เพื่อให้รูปภาพปรับขนาดตามขนาดของคอลัมน์ */
-  max-width: 400px; /* เพิ่ม max-width เพื่อระบุขนาดสูงสุดของรูปภาพ */
+  max-width: 400px;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* ข้อมูลโปรไฟล์ */
+/* Info Section Style */
 .info  {
   background-color: #faf2ff;
   color: rgb(39, 0, 116);
@@ -82,7 +73,7 @@ nav ul li a {
   margin-top: 20px; /* เพิ่มระยะห่างด้านบน */
 }
 
-.Skills  {
+.Skills {
   background-color: #faf2ff;
   color: rgb(39, 0, 116);
   padding: 20px;
@@ -100,9 +91,25 @@ nav ul li a {
   margin-top: 20px; /* เพิ่มระยะห่างด้านบน */
 }
 
-/* ส่วนของการติดต่อ */
+/* Skills Section Style */
+.Skills {
+  display: flex;
+  flex-direction: column;
+}
+
+.Skills h2 {
+  margin-bottom: 0.5rem;
+}
+
+.Skills p {
+  margin-bottom: 0.25rem;
+}
+
+/* Contact Section Style */
 .contact-info {
-  margin-top: 10px; /* ลดระยะห่างด้านบน */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 /* ส่วนของรายการการติดต่อ */
@@ -110,7 +117,6 @@ nav ul li a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 10px; /* ลดระยะห่างด้านบน */
 }
 
 /* ส่วนของรูปภาพการติดต่อ */
@@ -128,14 +134,37 @@ nav ul li a {
   transform: scale(1.1); /* เพิ่มขนาดเมื่อโฮเวอร์ */
 }
 
+
 /* การปรับขนาดสำหรับหน้าจอเล็ก */
 @media (max-width: 768px) {
   .container {
     grid-template-columns: 1fr; /* เปลี่ยนเป็นคอลัมน์เดียวสำหรับหน้าจอเล็ก */
   }
 
+  .container {
+    padding: 1rem; /* ลด Padding ของ Container */
+    grid-template-columns: 1fr; /* เปลี่ยนเลย์เอาท์เป็นคอลัมน์เดียว */
+  }
+
+  .profile {
+    flex-direction: column; /* จัดเรียงเนื้อหาใน Profile Section เป็นคอลัมน์เดียว */
+    text-align: center; /* จัดเนื้อหาตรงกลางใน Profile Section */
+  }
+
   .profile-pic {
-    max-width: 100%; /* เพิ่ม max-width เพื่อให้รูปภาพปรับขนาดตามคอลัมน์ */
+    max-width: 50%; /* ปรับขนาดรูปให้เต็มความกว้างของ Container */
     height: auto;
+    margin-bottom: 1rem; /* เพิ่มระยะห่างด้านล่างรูปใน Profile Section */
+  }
+
+  .Skills,
+  .contact {
+    padding: 0.5rem; /* ลด Padding ของ Skills และ Contact Section */
+  }
+
+  .contact-item img {
+    max-width: 100px; /* ลดขนาดรูปใน Contact Section */
+    padding: 20px; /* ลดระยะห่างรอบขอบรูปใน Contact Section */
   }
 }
+
