@@ -60,9 +60,6 @@ h2 {
 }
 
 .profile-info {
-  flex: 1; /* ให้ข้อมูลโปรไฟล์ยืดขยายตามพื้นที่ที่เหลือ */
-  display: flex;
-  flex-direction: column;
   background-color: #faf2ff;
   color: rgb(39, 0, 116);
   padding: 20px;
@@ -72,26 +69,25 @@ h2 {
 
 @media (max-width: 768px) {
   .profile-pic {
-    width: 400px; /* กำหนดความกว้างของรูป */
-    height: 500px; /* กำหนดความสูงของรูป */
-  }
-
-  .profile-info {
-    padding: 10px;
+    max-width: 100%;
+    height: auto;
   }
 }
 
-.bio {
+.Edu {
   grid-column: span 2;
   background-color: #faf2ff;
+  color: rgb(39, 0, 116);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+
 .Skills {
   grid-column: span 2;
   background-color: #faf2ff;
+  color: rgb(39, 0, 116);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
