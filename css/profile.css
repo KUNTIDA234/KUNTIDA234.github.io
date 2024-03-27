@@ -37,6 +37,7 @@ nav ul li a {
   display: grid;
   gap: 20px;
   padding: 20px;
+
 }
 
 /* ส่วนของโปรไฟล์ */
@@ -105,14 +106,11 @@ h2 {
   flex-wrap: wrap;
   margin-top: 20px;
   justify-content: center;
-  width: auto;
-  height: auto;
 }
 
 /* รูปภาพการติดต่อ */
 .contact-item img {
-  width: 100px;
-  height: 100px;
+  max-width: 100px;
   border-radius: 50%;
   transition: transform 0.3s ease;
   padding: 20px;
