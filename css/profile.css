@@ -61,15 +61,12 @@ h2 {
 }
 
 /* ข้อมูลโปรไฟล์ */
-.info {
+.profile-info {
   background-color: #faf2ff;
   color: rgb(39, 0, 116);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  margin: 0 auto; /* จัดกลางตามแนวนอน */
-  box-sizing: border-box;
 }
 
 /* ส่วนของการศึกษา */
@@ -113,21 +110,11 @@ h2 {
 
 /* รูปภาพการติดต่อ */
 .contact-item img {
-  max-width: 100px;
+  width: 100px;
   height: auto;
   border-radius: 50%;
   transition: transform 0.3s ease;
   padding: 20px;
-}
-
-/* การเพิ่มขนาดของรูปภาพเมื่อโฮเวอร์ */
-.contact-item img:hover {
-  transform: scale(1.1);
-}
-
-/* การจัดวางลิงก์ของการติดต่อ */
-.contact-item a:last-child {
-  margin-right: 0;
 }
 
 /* การปรับขนาดสำหรับหน้าจอเล็ก */
