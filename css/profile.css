@@ -32,9 +32,9 @@ nav ul li a {
   text-decoration: none;
 }
 
+/* ส่วนของคลาส container */
 .container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 20px;
   padding: 20px;
   background-color: #ffffff;
@@ -42,23 +42,27 @@ nav ul li a {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+/* ส่วนของโปรไฟล์ */
 .profile {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.profile-pic {
-  width: 400px; /* กำหนดความกว้างของรูป */
-  height: 500px; /* กำหนดความสูงของรูป */
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
+/* หัวเรื่องรูปโปรไฟล์ */
 h2 {
   color: rgb(39, 0, 116);
 }
 
+/* รูปโปรไฟล์ */
+.profile-pic {
+  width: 400px;
+  height: 500px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* ข้อมูลโปรไฟล์ */
 .profile-info {
   background-color: #faf2ff;
   color: rgb(39, 0, 116);
@@ -67,15 +71,8 @@ h2 {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 768px) {
-  .profile-pic {
-    max-width: 100%;
-    height: auto;
-  }
-}
-
+/* ส่วนของการศึกษา */
 .Edu {
-  grid-column: span 2;
   background-color: #faf2ff;
   color: rgb(39, 0, 116);
   padding: 20px;
@@ -83,9 +80,8 @@ h2 {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-
+/* ส่วนของทักษะ */
 .Skills {
-  grid-column: span 2;
   background-color: #faf2ff;
   color: rgb(39, 0, 116);
   padding: 20px;
@@ -93,18 +89,20 @@ h2 {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+/* ส่วนของการติดต่อ */
 .grid-item.contact {
-  grid-column: span 2;
   background-color: #faf2ff;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+/* ข้อมูลการติดต่อ */
 .contact-info {
   margin-top: 20px;
 }
 
+/* รายการการติดต่อ */
 .contact-item {
   display: flex;
   flex-wrap: wrap;
@@ -114,18 +112,29 @@ h2 {
   height: auto;
 }
 
+/* รูปภาพการติดต่อ */
 .contact-item img {
-  width: 100px; /* กำหนดความกว้างของรูปใน contact-item */
-  height: 100px; /* กำหนดความสูงของรูปใน contact-item */
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   transition: transform 0.3s ease;
   padding: 20px;
 }
 
+/* การเพิ่มขนาดของรูปภาพเมื่อโฮเวอร์ */
 .contact-item img:hover {
   transform: scale(1.1);
 }
 
+/* การจัดวางลิงก์ของการติดต่อ */
 .contact-item a:last-child {
   margin-right: 0;
+}
+
+/* การปรับขนาดสำหรับหน้าจอเล็ก */
+@media (max-width: 768px) {
+  .profile-pic {
+    max-width: 100%;
+    height: auto;
+  }
 }
