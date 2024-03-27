@@ -35,7 +35,7 @@ nav ul li a {
 /* ส่วนของคลาส container */
 .container {
   display: grid;
-  grid-template-columns: repeat(1fr);
+  grid-template-columns: 1fr;
   gap: 20px;
   padding: 20px;
 
