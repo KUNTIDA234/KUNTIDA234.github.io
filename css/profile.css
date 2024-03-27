@@ -111,6 +111,7 @@ h2 {
 /* รูปภาพการติดต่อ */
 .contact-item img {
   max-width: 100px;
+  height: auto;
   border-radius: 50%;
   transition: transform 0.3s ease;
   padding: 20px;
