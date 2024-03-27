@@ -35,20 +35,22 @@ nav ul li a {
 /* ส่วนของคลาส container */
 .container {
   display: grid;
+  grid-template-columns: 1fr ;
   gap: 20px;
   padding: 20px;
-
 }
 
 /* ส่วนของโปรไฟล์ */
 .profile {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 /* หัวเรื่องรูปโปรไฟล์ */
-h2 {
+.profile h2 {
+  margin-bottom: 10px; /* เพิ่มระยะห่างด้านล่างของ h2 */
   color: rgb(39, 0, 116);
 }
 
@@ -61,64 +63,75 @@ h2 {
 }
 
 /* ข้อมูลโปรไฟล์ */
-.info {
+.info  {
   background-color: #faf2ff;
   color: rgb(39, 0, 116);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 20px; /* เพิ่มระยะห่างด้านบน */
 }
 
-/* ส่วนของการศึกษา */
-.Edu {
+.Edu  {
   background-color: #faf2ff;
   color: rgb(39, 0, 116);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 20px; /* เพิ่มระยะห่างด้านบน */
 }
 
-/* ส่วนของทักษะ */
-.Skills {
+.Skills  {
   background-color: #faf2ff;
   color: rgb(39, 0, 116);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 20px; /* เพิ่มระยะห่างด้านบน */
 }
 
-/* ส่วนของการติดต่อ */
-.grid-item.contact {
+.contact {
   background-color: #faf2ff;
+  color: rgb(39, 0, 116);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 20px; /* เพิ่มระยะห่างด้านบน */
 }
 
 /* ข้อมูลการติดต่อ */
 .contact-info {
-  margin-top: 20px;
+  margin-top: 10px; /* ลดระยะห่างด้านบน */
 }
 
 /* รายการการติดต่อ */
 .contact-item {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 20px;
   justify-content: center;
+  margin-top: 10px; /* ลดระยะห่างด้านบน */
 }
 
 /* รูปภาพการติดต่อ */
 .contact-item img {
   width: 100px;
-  height: auto;
+  height: 100px; /* เปลี่ยนความสูงเป็น 100px ให้สูงเท่ากับความกว้าง */
   border-radius: 50%;
   transition: transform 0.3s ease;
-  padding: 20px;
+  margin: 10px; /* เพิ่มระยะห่างรอบภาพ */
+}
+
+/* Hover effect สำหรับรูปภาพการติดต่อ */
+.contact-item img:hover {
+  transform: scale(1.1); /* เพิ่มขนาดเมื่อโฮเวอร์ */
 }
 
 /* การปรับขนาดสำหรับหน้าจอเล็ก */
 @media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr; /* เปลี่ยนเป็นคอลัมน์เดียวสำหรับหน้าจอเล็ก */
+  }
+
   .profile-pic {
     max-width: 100%;
     height: auto;
