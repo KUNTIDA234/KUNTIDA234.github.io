@@ -57,12 +57,13 @@ nav ul li a {
 .Edu,
 .Skills,
 .contact {
-  background-color: #fef3fd;
-  color: #690073;
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 20px; /* เพิ่ม margin-bottom เพื่อป้องกัน CLS */
-}
+    background-color: #fef3fd;
+    color: #690073;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px; /* เพิ่ม margin-bottom เพื่อป้องกัน CLS */
+    min-height: 150px; /* กำหนดความสูงขั้นต่ำของ .info เพื่อป้องกันการขยับ */
+  }
 
 .contact-info {
   display: flex;
