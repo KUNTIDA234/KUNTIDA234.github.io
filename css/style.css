@@ -1,83 +1,98 @@
+/* กำหนด font-family ให้กับทั้งหน้าเว็บ */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
+/* สไตล์ของส่วนหัว (header) */
 header {
-  background-color: #5C3ECA;
-  padding: 10px;
+  background-color: #5C3ECA; /* สีพื้นหลัง */
+  padding: 10px; /* ระยะห่างขอบ */
 }
 
+/* สไตล์ของหัวข้อในส่วนหัว */
 header h1 {
-  margin: 0;
-  color: rgb(255, 255, 169);
-  text-align: left;
+  margin: 0; /* ลบระยะขอบซ้ายขวา */
+  color: rgb(255, 255, 169); /* สีข้อความ */
+  text-align: left; /* จัดข้อความชิดซ้าย */
 }
+
+/* สไตล์ของเมนูนำทาง */
 nav ul {
-  list-style-type: none;
-  margin: 10;
-  padding: 0;
-  text-align: left;
-  display: flex;
+  list-style-type: none; /* ลบเครื่องหมายลำดับ */
+  margin: 10px; /* ระยะห่างขอบซ้ายขวา */
+  padding: 0; /* ลบระยะขอบภายใน */
+  text-align: left; /* จัดข้อความชิดซ้าย */
+  display: flex; /* จัดเรียงเป็นแนวนอน */
 }
 
+/* สไตล์ของรายการในเมนูนำทาง */
 nav ul li {
-  display: flex;
-  margin-right: 20px;
+  display: flex; /* จัดเรียงเป็นแนวนอน */
+  margin-right: 20px; /* ระยะห่างระหว่างรายการ */
 }
 
+/* สไตล์ของลิงก์ในเมนูนำทาง */
 nav ul li a {
-  color: white;
-  text-decoration: none;
+  color: white; /* สีข้อความลิงก์ */
+  text-decoration: none; /* ลบขีดเส้นใต้ข้อความลิงก์ */
 }
 
+/* สไตล์ของส่วนหลัก (main) */
 main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 80vh;
+  display: flex; /* จัดเรียงเนื้อหาในส่วนหลัก */
+  justify-content: center; /* จัดเรียงตามแนวนอนตรงกลาง */
+  align-items: center; /* จัดเรียงตามแนวตั้งตรงกลาง */
+  min-height: 80vh; /* กำหนดความสูงขั้นต่ำ */
 }
 
+/* สไตล์ของกริด (grid) */
 .grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  display: grid; /* ใช้เลยูกริด */
+  grid-template-columns: 1fr 1fr; /* แบ่งเป็น 2 คอลัมน์ */
+  gap: 20px; /* ระยะห่างระหว่างองค์ประกอบ */
 }
 
+/* สไตล์ขององค์ประกอบในกริด */
 .grid-item {
-  padding: 20px;
-  background-color: #F8C9DD;
-  color: rgb(78, 5, 151);
+  padding: 20px; /* ระยะห่างภายในองค์ประกอบ */
+  background-color: #F8C9DD; /* สีพื้นหลัง */
+  color: rgb(78, 5, 151); /* สีข้อความ */
 }
 
+/* สไตล์ของภาพ */
 .image {
-  display: flex;
-  justify-content: left;
-  align-items: center;
+  display: flex; /* จัดเรียงเป็นแนวนอน */
+  justify-content: left; /* จัดเรียงชิดซ้าย */
+  align-items: center; /* จัดเรียงตามแนวตั้งตรงกลาง */
 }
 
+/* สไตล์ของภาพในกริด */
 .image img {
-  max-width: 50%;
-  height: auto;
-  box-sizing: border-box; /* เพิ่มเติม */
-  padding: 10px ;
+  max-width: 50%; /* กำหนดความกว้างสูงสุด */
+  height: auto; /* ความสูงตัวภาพปรับอัตโนมัติ */
+  box-sizing: border-box; /* กำหนดให้รูปเข้าถึงพื้นที่ padding */
+  padding: 10px ; /* ระยะห่างระหว่างรูปภาพและขอบ */
 }
 
+/* สไตล์ของข้อความ */
 .text {
-  padding: 20px;
-  background-color: #F8C9DD;
-  max-width: 100%;
+  padding: 20px; /* ระยะห่างภายในองค์ประกอบ */
+  background-color: #F8C9DD; /* สีพื้นหลัง */
+  max-width: 100%; /* กำหนดความกว้างสูงสุด */
 }
 
+/* สไตล์ Responsive สำหรับหน้าจอขนาดเล็ก */
 @media (max-width: 768px) {
   .grid-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* แสดงเป็นคอลัมน์เดียว */
   }
 }
 
+/* สไตล์ของส่วนท้าย (footer) */
 footer {
-  text-align: center;
-  font: 1em sans-serif;
-  font-weight: bold;
+  text-align: center; /* จัดข้อความตรงกลาง */
+  font: 1em sans-serif; /* ขนาดและแบบอักษร */
+  font-weight: bold; /* ความหนาของตัวอักษร */
 }

@@ -1,32 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- กำหนด encoding เป็น UTF-8 เพื่อรองรับภาษาที่หลากหลาย -->
     <meta charset="UTF-8">
+    <!-- กำหนด viewport เพื่อให้เว็บไซต์ปรับขนาดและเลื่อนได้อย่างเหมาะสม -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <!-- กำหนดชื่อหน้าเว็บที่จะแสดงบนแท็บของเบราว์เซอร์ -->
+    <title>Game</title>
+    <!-- เชื่อมโยงไฟล์ CSS เพื่อให้เว็บไซต์มีการจัดรูปแบบและสีตามที่กำหนด -->
     <link rel="stylesheet" href="./css/game.css">
 </head>
 
 <body>
+    <!-- เริ่มส่วนหัวของหน้าเว็บ -->
     <header>
+        <!-- ส่วนหัวของเว็บ ประกอบด้วยชื่อเว็บ -->
         <h1>Welcome to Number Puzzle Game</h1>
+        <!-- เมนูนำทางด้านบนของหน้าเว็บ -->
         <nav>
+            <!-- รายการเมนู -->
             <ul>
+                <!-- ลิงก์ไปยังหน้าหลัก -->
                 <li><a href="index.html">Home</a></li>
-                <li><a href="game.html">Game-Javascript</a></li>
-                <li><a href="profile.html">Contact</a></li>
+                <!-- ลิงก์ไปยังหน้าเกม -->
+                <li><a href="game.html">Game</a></li>
+                <!-- ลิงก์ไปยังหน้าโปรไฟล์ -->
+                <li><a href="profile.html">Curriculum Vitae</a></li>
             </ul>
         </nav>
     </header>
+
+    <!-- เริ่มส่วนหลักของหน้าเว็บ -->
     <main>
+        <!-- ส่วนเนื้อหาหลักของหน้าเว็บ -->
         <div class="container">
+            <!-- ตำแหน่งของเกมบอร์ด -->
             <div id="game-board" class="game-board"></div>
+            <!-- ข้อความแสดงผลสถานะเกม -->
             <div id="message" class="message"></div>
+            <!-- ปุ่มเริ่มเกม -->
             <button id="start-btn" class="start-btn">Start Game</button>
+            <!-- ตัวนับเวลา -->
             <div id="timer" class="timer">Time: 0 seconds</div>
-          </div>
+        </div>
     </main>
 
+    <!-- เชื่อมโยงไฟล์ JavaScript เพื่อให้เกมทำงาน -->
     <script src="./script/script.js"></script>
 </body>
 </html>

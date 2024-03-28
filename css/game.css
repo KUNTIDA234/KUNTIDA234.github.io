@@ -1,91 +1,107 @@
+/* กำหนด font-family ให้กับทั้งหน้าเว็บ */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
+/* สไตล์ของส่วนหัว (header) */
 header {
-  background-color: #5C3ECA;
-  padding: 10px;
+  background-color: #5C3ECA; /* สีพื้นหลัง */
+  padding: 10px; /* ระยะห่างขอบ */
 }
 
+/* สไตล์ของหัวข้อในส่วนหัว */
 header h1 {
-  margin: 0;
-  color: rgb(255, 255, 169);
-  text-align: left;
+  margin: 0; /* ลบระยะขอบซ้ายขวา */
+  color: rgb(255, 255, 169); /* สีข้อความ */
+  text-align: left; /* จัดข้อความชิดซ้าย */
 }
+
+/* สไตล์ของเมนูนำทาง */
 nav ul {
-  list-style-type: none;
-  margin: 10;
-  padding: 0;
-  text-align: left;
-  display: flex;
+  list-style-type: none; /* ลบเครื่องหมายลำดับ */
+  margin: 10px; /* ระยะห่างขอบซ้ายขวา */
+  padding: 0; /* ลบระยะขอบภายใน */
+  text-align: left; /* จัดข้อความชิดซ้าย */
+  display: flex; /* จัดเรียงเป็นแนวนอน */
 }
 
+/* สไตล์ของรายการในเมนูนำทาง */
 nav ul li {
-  display: flex;
-  margin-right: 20px;
+  display: flex; /* จัดเรียงเป็นแนวนอน */
+  margin-right: 20px; /* ระยะห่างระหว่างรายการ */
 }
 
+/* สไตล์ของลิงก์ในเมนูนำทาง */
 nav ul li a {
-  color: white;
-  text-decoration: none;
+  color: white; /* สีข้อความลิงก์ */
+  text-decoration: none; /* ลบขีดเส้นใต้ข้อความลิงก์ */
 }
 
+/* สไตล์ของส่วนหลัก (main) */
 main {
-  max-width: 400px;
-  margin: 0 auto;
+  max-width: 400px; /* กำหนดความกว้างสูงสุด */
+  margin: 0 auto; /* จัดกึ่งกลางตามแนวนอน */
 }
 
+/* สไตล์ของ .container */
 .container {
-  text-align: center;
+  text-align: center; /* จัดข้อความตรงกลาง */
 }
 
+/* สไตล์ของกริด (game-board) */
 .game-board {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 5px;
-  margin-bottom: 20px;
-  margin: 20px;
-  color: #5C3ECA;
+  display: grid; /* ใช้เลยูกริด */
+  grid-template-columns: repeat(4, 1fr); /* แบ่งเป็น 4 คอลัมน์ */
+  gap: 5px; /* ระยะห่างระหว่างองค์ประกอบ */
+  margin-bottom: 20px; /* ระยะห่างด้านล่าง */
+  margin: 20px; /* ระยะห่างด้านบนและด้านล่าง */
+  color: #5C3ECA; /* สีข้อความ */
 }
 
+/* สไตล์ของเครื่องหมาย (tile) */
 .tile {
-  border: 1px solid #ccc;
-  padding: 20px;
-  font-size: 24px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  border: 1px solid #ccc; /* เส้นขอบ */
+  padding: 20px; /* ระยะห่างภายใน */
+  font-size: 24px; /* ขนาดข้อความ */
+  cursor: pointer; /* เปลี่ยนรูปแบบเมาส์เป็นเครื่องมือ */
+  transition: background-color 0.3s ease; /* เพิ่มเอฟเฟกต์การเปลี่ยนสีพื้นหลัง */
 }
 
+/* สไตล์เมื่อคำตอบถูกต้อง (correct) */
 .tile.correct {
-  background-color: green; /* เปลี่ยนสีเมื่อเรียงถูกต้อง */
-  color: #fff;
+  background-color: green; /* เปลี่ยนสีเมื่อถูกต้อง */
+  color: #fff; /* สีข้อความเมื่อถูกต้อง */
 }
 
+/* สไตล์ข้อความ (message) */
 .message {
-  font-size: 24px;
-  font-weight: bold;
-  color: #991515; /* สีข้อความเมื่อเรียงถูกต้อง */
-  margin: 20px;
+  font-size: 24px; /* ขนาดข้อความ */
+  font-weight: bold; /* หน้าตาข้อความ */
+  color: #991515; /* สีข้อความ */
+  margin: 20px; /* ระยะห่างด้านบนและด้านล่าง */
 }
 
+/* สไตล์ของปุ่มเริ่มเกม (start-btn) */
 .start-btn {
-  padding: 10px 20px;
-  font-size: 18px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  padding: 10px 20px; /* ขนาดของปุ่ม */
+  font-size: 18px; /* ขนาดข้อความ */
+  background-color: #007bff; /* สีพื้นหลัง */
+  color: #fff; /* สีข้อความ */
+  border: none; /* ไม่มีเส้นขอบ */
+  cursor: pointer; /* เปลี่ยนรูปแบบเมาส์เป็นเครื่องมือ */
+  transition: background-color 0.3s ease; /* เพิ่มเอฟเฟกต์การเปลี่ยนสีพื้นหลัง */
 }
 
+/* สไตล์เมื่อโฮเวอร์ปุ่มเริ่มเกม (start-btn:hover) */
 .start-btn:hover {
-  background-color: #0056b3;
+  background-color: #0056b3; /* เปลี่ยนสีเมื่อโฮเวอร์ */
 }
 
+/* สไตล์ของตัวจับเวลา (timer) */
 .timer {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 20px;
+  font-size: 18px; /* ขนาดข้อความ */
+  font-weight: bold; /* หน้าตาข้อความ */
+  margin: 20px; /* ระยะห่างด้านบนและด้านล่าง */
 }

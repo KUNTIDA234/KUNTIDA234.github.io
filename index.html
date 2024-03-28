@@ -1,42 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- กำหนด encoding เป็น UTF-8 เพื่อรองรับภาษาที่หลากหลาย -->
     <meta charset="UTF-8">
+    <!-- กำหนด viewport เพื่อให้เว็บไซต์ปรับขนาดและเลื่อนได้อย่างเหมาะสม -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- กำหนดชื่อหน้าเว็บที่จะแสดงบนแท็บของเบราว์เซอร์ -->
     <title>Home Page</title>
+    <!-- เชื่อมโยงไฟล์ CSS เพื่อให้เว็บไซต์มีการจัดรูปแบบและสีตามที่กำหนด -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
+    <!-- เริ่มส่วนหัวของหน้าเว็บ -->
     <header>
+        <!-- ส่วนหัวของเว็บ ประกอบด้วยชื่อเว็บ -->
         <h1>Welcome to Personal Website </h1>
+        <!-- เมนูนำทางด้านบนของหน้าเว็บ -->
         <nav>
+            <!-- รายการเมนู -->
             <ul>
+                <!-- ลิงก์ไปยังหน้าหลัก -->
                 <li><a href="index.html">Home</a></li>
-                <li><a href="game.html">Game-Javascript</a></li>
-                <li><a href="profile.html">Contact</a></li>
+                <!-- ลิงก์ไปยังหน้าเกม -->
+                <li><a href="game.html">Game</a></li>
+                <!-- ลิงก์ไปยังหน้าโปรไฟล์ -->
+                <li><a href="profile.html">Curriculum Vitae</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- เริ่มส่วนหลักของหน้าเว็บ -->
     <main>
+        <!-- เริ่มส่วนเนื้อหา -->
         <section class="grid-container">
+            <!-- ส่วนเนื้อหาแบบกริด ประกอบด้วยรูปภาพ -->
             <div class="grid-item image">
+                <!-- แสดงรูปภาพที่ 1 -->
                 <img src="./image/S__25690116_0.jpg" alt="image1">
+                <!-- แสดงรูปภาพที่ 2 -->
                 <img src="./image/S__25690117_0.jpg" alt="image2">
-                
             </div>
             
+            <!-- ส่วนเนื้อหาแบบกริด ประกอบด้วยข้อความ -->
             <div class="grid-item text">
+                <!-- ชื่อหัวข้อ-->
                 <h2>Personal Website</h2>
+                <!-- ข้อความรายละเอียดเกี่ยวกับเว็บไซต์ -->
                 <p>Personal Website นี้จัดทำขึ้นเพื่อรายวิชา Web Technology โดยประกอบไปด้วย </p>
-                    <p>1. Home page</p> 
-                    <p>2. Game-Javascript</p>
-                    <p>3. Profile</p>
+                <p>1. Home page</p> 
+                <p>2. Game-Javascript</p>
+                <p>3. Profile</p>
             </div>
         </section>
     </main>
-
+    <!-- ส่วนท้ายของหน้าเว็บ -->
     <footer>
         <p>&copy; create by 64030234 Kuntida Kesorn</p>
     </footer>
