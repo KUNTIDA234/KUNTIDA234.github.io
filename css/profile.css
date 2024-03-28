@@ -32,138 +32,63 @@ nav ul li a {
   text-decoration: none;
 }
 
-/* ส่วนของคลาส container */
-.container {
+
+main {
   display: grid;
-  grid-template-columns: 1fr ;
+  grid-template-columns: repeat(auto-fit, minmax(1fr));
+  padding: 20px;
   gap: 20px;
-  padding: 20px;
 }
 
-/* Profile Section Style */
-.profile {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.profile-pic {
-  max-width: 400px;
-  height: auto;
-  border-radius: 10px;
-}
-
-/* Info Section Style */
-.info  {
-  background-color: #faf2ff;
-  color: rgb(39, 0, 116);
+.info {
+  background-color: #fff;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  margin-top: 20px; /* เพิ่มระยะห่างด้านบน */
 }
 
-.Edu  {
-  background-color: #faf2ff;
-  color: rgb(39, 0, 116);
+.profile-picture {
+  display: block;
+  margin: 0 auto;
+  width: 300px; /* กำหนดความกว้างของรูปภาพ */
+  height: auto; /* กำหนดความสูงของรูปภาพ */
+  border-radius: 10px; /* กำหนดขอบมน */
+  overflow: hidden; /* ป้องกันรูปภาพเกินขอบมน */
+}
+
+.profile-picture img {
+  width: 100%; /* ขยายรูปภาพให้เต็มพื้นที่ */
+  height: 100%; /* ขยายรูปภาพให้เต็มพื้นที่ */
+  object-fit: cover; /* ปรับขนาดรูปภาพเพื่อให้เต็มขอบมน */
+}
+
+.Edu, .Skills, .contact {
+  background-color: #fff;
   padding: 20px;
-  border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  margin-top: 20px; /* เพิ่มระยะห่างด้านบน */
 }
 
-.Skills {
-  background-color: #faf2ff;
-  color: rgb(39, 0, 116);
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  margin-top: 20px; /* เพิ่มระยะห่างด้านบน */
-}
-
-.contact {
-  background-color: #faf2ff;
-  color: rgb(39, 0, 116);
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  margin-top: 20px; /* เพิ่มระยะห่างด้านบน */
-}
-
-/* Skills Section Style */
-.Skills {
-  display: flex;
-  flex-direction: column;
-}
-
-.Skills h2 {
-  margin-bottom: 0.5rem;
-}
-
-.Skills p {
-  margin-bottom: 0.25rem;
-}
-
-/* Contact Section Style */
 .contact-info {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-/* ส่วนของรายการการติดต่อ */
-.contact-item {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
 }
 
-/* ส่วนของรูปภาพการติดต่อ */
-.contact-item img {
+.contact-info a img {
   width: 80px;
-  height: 80px; /* รักษาขนาดเป็น 100x100px */
+  height: 80px;
   border-radius: 50%;
   transition: transform 0.3s ease;
-  margin: 10px; /* เพิ่มระยะห่างรอบภาพ */
-  
 }
 
-/* Hover effect สำหรับรูปภาพการติดต่อ */
-.contact-item img:hover {
-  transform: scale(1.1); /* เพิ่มขนาดเมื่อโฮเวอร์ */
+.contact-info a img:hover {
+  transform: scale(1.2);
 }
 
-
-/* การปรับขนาดสำหรับหน้าจอเล็ก */
-@media (max-width: 768px) {
-  .container {
-    grid-template-columns: 1fr; /* เปลี่ยนเป็นคอลัมน์เดียวสำหรับหน้าจอเล็ก */
-  }
-
-  .container {
-    padding: 1rem; /* ลด Padding ของ Container */
-    grid-template-columns: 1fr; /* เปลี่ยนเลย์เอาท์เป็นคอลัมน์เดียว */
-  }
-
-  .profile {
-    flex-direction: column; /* จัดเรียงเนื้อหาใน Profile Section เป็นคอลัมน์เดียว */
-    text-align: center; /* จัดเนื้อหาตรงกลางใน Profile Section */
-  }
-
-  .profile-pic {
-    max-width: 50%; /* ปรับขนาดรูปให้เต็มความกว้างของ Container */
-    height: auto;
-    margin-bottom: 1rem; /* เพิ่มระยะห่างด้านล่างรูปใน Profile Section */
-  }
-
-  .Skills,
-  .contact {
-    padding: 0.5rem; /* ลด Padding ของ Skills และ Contact Section */
-  }
-
-  .contact-item img {
-    max-width: 100px; /* ลดขนาดรูปใน Contact Section */
-    padding: 20px; /* ลดระยะห่างรอบขอบรูปใน Contact Section */
-  }
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
 }
