@@ -48,8 +48,9 @@ nav ul li a {
 }
 
 .profile-pic {
-  width: 350px;
-  height: 400px;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
   border-radius: 10px;
 }
 
